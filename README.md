@@ -2,8 +2,8 @@
 
 > Message notification component using Material-UI
 
-[![NPM](https://img.shields.io/npm/v/message-notification-mui.svg)](https://www.npmjs.com/package/message-notification-mui)
-[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/@dhouse.in/message-notification-mui)](https://www.npmjs.com/package/@dhouse.in/message-notification-mui)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen)](https://standardjs.com)
 
 ## Install
 
