@@ -1,10 +1,16 @@
 import React from 'react'
-
-import { ExampleComponent } from 'message-notification-mui'
-import 'message-notification-mui/dist/index.css'
+import { MessageNotification, MessageProvider } from 'message-notification-mui'
+import Buttons from './Buttons';
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return (
+    <MessageProvider>
+      <div>
+        <Buttons />
+      </div>
+      <MessageNotification />
+    </MessageProvider>
+  );
 }
 
 export default App

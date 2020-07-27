@@ -2,7 +2,8 @@
 
 > Message notification component using Material-UI
 
-[![NPM](https://img.shields.io/npm/v/message-notification-mui.svg)](https://www.npmjs.com/package/message-notification-mui) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/message-notification-mui.svg)](https://www.npmjs.com/package/message-notification-mui)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
@@ -11,20 +12,52 @@ npm install --save message-notification-mui
 ```
 
 ## Usage
+It is divided in two steps:
 
+##### Step 1: Wrap the application with the provider
 ```jsx
-import React, { Component } from 'react'
+import React from 'react'
+import { MessageNotification, MessageProvider } from 'message-notification-mui'
+import MyApplication from '.'
 
-import MyComponent from 'message-notification-mui'
-import 'message-notification-mui/dist/index.css'
-
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+const App = () => {
+  return (
+    <MessageProvider>
+      <div>
+        <MyApplication />
+      </div>
+      <MessageNotification />
+    </MessageProvider>
+  );
 }
+
+export default App
+```
+
+##### Step 2: Use the hook `useMessageNotification` to set and show the message
+```jsx
+import React from 'react'
+import { useMessageNotification } from 'message-notification-mui'
+
+const MyApplication = () => {
+  const { addMessage } = useMessageNotification();
+
+  const showInfoMessage = () => {
+    const title = 'Info Message';
+    const text = 'My info message';
+    addMessage(title, text, 'info');
+  };
+
+  return (
+    <div>
+      <button onClick={showInfoMessage}>Show Info Message</button>
+    </div>
+  );
+}
+
+export default MyApplication
 ```
 
 ## License
 
-MIT © [Marcel Silva](https://github.com/Marcel Silva)
+MIT © [Marcel Silva](https://github.com/silvamarcel)
