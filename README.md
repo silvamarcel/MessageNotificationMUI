@@ -4,6 +4,7 @@
 
 [![NPM](https://img.shields.io/npm/v/@dhouse.in/message-notification-mui)](https://www.npmjs.com/package/@dhouse.in/message-notification-mui)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen)](https://standardjs.com)
+[![License](https://img.shields.io/github/license/silvamarcel/MessageNotificationMUI)](https://github.com/silvamarcel/MessageNotificationMUI/blob/master/LICENSE)
 
 ## Install
 
