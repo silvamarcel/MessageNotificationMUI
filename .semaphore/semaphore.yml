@@ -32,7 +32,7 @@ blocks:
       - ⌛ Install dependencies
     task:
       secrets:
-        - name: DuplicaWeb
+        - name: MessageNotificationMUI
       epilogue:
         always:
           commands:
