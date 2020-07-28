@@ -28,7 +28,7 @@ blocks:
           commands:
             - checkout --use-cache
             - cache restore
-            - 'npm run publish:build'
+            - npm run prepare
             - cache delete message-notification-mui-build
             - cache store message-notification-mui-build dist
       secrets:
