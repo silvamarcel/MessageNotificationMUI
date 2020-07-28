@@ -3,11 +3,15 @@
 > Message notification component using Material-UI
 
 [![NPM](https://img.shields.io/npm/v/@dhouse.in/message-notification-mui)](https://www.npmjs.com/package/@dhouse.in/message-notification-mui)
+[![CodeFactor](https://www.codefactor.io/repository/github/silvamarcel/messagenotificationmui/badge?style=flat)](https://www.codefactor.io/repository/github/silvamarcel/messagenotificationmui)
+![SemaphoreCI](https://libs.semaphoreci.com/badges/MessageNotificationMUI.svg)
+[![codecov](https://codecov.io/gh/silvamarcel/MessageNotificationMUI/branch/master/graph/badge.svg)](https://codecov.io/gh/silvamarcel/MessageNotificationMUI)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat)](https://github.com/prettier/prettier)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen)](https://standardjs.com)
 [![License](https://img.shields.io/github/license/silvamarcel/MessageNotificationMUI)](https://github.com/silvamarcel/MessageNotificationMUI/blob/master/LICENSE)
 
-## Install
 
+## Install
 ```bash
 npm install --save message-notification-mui
 ```

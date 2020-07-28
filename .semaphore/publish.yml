@@ -1,0 +1,32 @@
+version: v1.0
+name: Publish to NPM
+agent:
+  machine:
+    type: e1-standard-2
+    os_image: ubuntu1804
+blocks:
+  - name: Publish
+    task:
+      secrets:
+        - name: MessageNotificationMUI
+      jobs:
+        - name: Publish to NPM
+          commands:
+            - checkout
+            - echo "//registry.npmjs.org/:_authToken=$NPM_AUTH_TOKEN" > ~/.npmrc
+            - cache restore message-notification-mui-build
+            - npm publish
+            - echo 'MessageNotificationMUI was published!'
+    dependencies:
+      - Build
+  - name: Build
+    dependencies: []
+    task:
+      jobs:
+        - name: Build
+          commands:
+            - checkout --use-cache
+            - cache restore
+            - npm run publish:build
+            - cache delete message-notification-mui-build
+            - cache store message-notification-mui-build dist
