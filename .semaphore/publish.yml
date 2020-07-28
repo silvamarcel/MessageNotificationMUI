@@ -13,7 +13,8 @@ blocks:
         - name: Publish to NPM
           commands:
             - checkout
-            - echo "//registry.npmjs.org/:_authToken=$NPM_AUTH_TOKEN" > ~/.npmrc
+            - 'echo "//registry.npmjs.org/:_authToken=$NPM_AUTH_TOKEN" > ~/.npmrc'
+            - cat ~/.npmrc
             - cache restore message-notification-mui-build
             - npm publish
             - echo 'MessageNotificationMUI was published!'
@@ -27,6 +28,6 @@ blocks:
           commands:
             - checkout --use-cache
             - cache restore
-            - npm run publish:build
+            - 'npm run publish:build'
             - cache delete message-notification-mui-build
             - cache store message-notification-mui-build dist
