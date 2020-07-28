@@ -13,9 +13,6 @@ blocks:
             - checkout
             - nvm use
             - npm install
-            - cd example
-            - npm install
-            - cd ..
             - cache store
     dependencies: []
   - name: ⚔️ Execute tests
