@@ -23,6 +23,8 @@ blocks:
   - name: Build
     dependencies: []
     task:
+      secrets:
+        - name: MessageNotificationMUI
       jobs:
         - name: Build
           commands:
