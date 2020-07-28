@@ -20,6 +20,19 @@ const MessageNotification = () => {
     horizontal: 'center'
   };
 
+  const Message = () => {
+    if (!message) {
+      return <div />;
+    } else {
+      return (
+        <Alert onClose={handleClose} severity={type}>
+          <AlertTitle>{title}</AlertTitle>
+          {text}
+        </Alert>
+      );
+    }
+  };
+
   return (
     <Snackbar
       open={!!message}
@@ -27,10 +40,7 @@ const MessageNotification = () => {
       onClose={handleClose}
       anchorOrigin={snackbarPosition}
     >
-      <Alert onClose={handleClose} severity={type}>
-        {title !== '' ? <AlertTitle>{title}</AlertTitle> : ''}
-        {text}
-      </Alert>
+      <Message />
     </Snackbar>
   );
 };
