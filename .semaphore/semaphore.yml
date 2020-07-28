@@ -4,6 +4,12 @@ agent:
   machine:
     type: e1-standard-2
     os_image: ubuntu1804
+
+global_job_config:
+  # Connect secret to all jobs in the pipeline
+  secrets:
+    - name: MessageNotificationMUI
+
 blocks:
   - name: ⌛ Install dependencies
     task:
@@ -31,8 +37,6 @@ blocks:
     dependencies:
       - ⌛ Install dependencies
     task:
-      secrets:
-        - name: MessageNotificationMUI
       epilogue:
         always:
           commands:

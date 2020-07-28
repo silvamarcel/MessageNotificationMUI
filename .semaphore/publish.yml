@@ -7,8 +7,6 @@ agent:
 blocks:
   - name: Publish
     task:
-      secrets:
-        - name: MessageNotificationMUI
       jobs:
         - name: Publish to NPM
           commands:
@@ -23,13 +21,11 @@ blocks:
   - name: Build
     dependencies: []
     task:
-      secrets:
-        - name: MessageNotificationMUI
       jobs:
         - name: Build
           commands:
             - checkout --use-cache
             - cache restore
-            - 'npm run publish:build'
+            - npm run publish:build
             - cache delete message-notification-mui-build
             - cache store message-notification-mui-build dist
