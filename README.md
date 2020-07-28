@@ -13,7 +13,7 @@
 
 ## Install
 ```bash
-npm install --save message-notification-mui
+npm install --save @dhouse.in/message-notification-mui
 ```
 
 ## Usage

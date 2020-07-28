@@ -11,9 +11,11 @@ blocks:
         - name: Install
           commands:
             - checkout
-            - cache restore
             - nvm use
             - npm install
+            - cd example
+            - npm install
+            - cd ..
             - cache store
     dependencies: []
   - name: ⚔️ Execute tests
