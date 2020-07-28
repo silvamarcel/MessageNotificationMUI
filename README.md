@@ -22,7 +22,7 @@ It is divided in two steps:
 ##### Step 1: Wrap the application with the provider
 ```jsx
 import React from 'react'
-import { MessageNotification, MessageProvider } from 'message-notification-mui'
+import { MessageNotification, MessageProvider } from '@dhouse.in/message-notification-mui'
 import MyApplication from '.'
 
 const App = () => {
@@ -42,7 +42,7 @@ export default App
 ##### Step 2: Use the hook `useMessageNotification` to set and show the message
 ```jsx
 import React from 'react'
-import { useMessageNotification } from 'message-notification-mui'
+import { useMessageNotification } from '@dhouse.in/message-notification-mui'
 
 const MyApplication = () => {
   const { addMessage } = useMessageNotification();
