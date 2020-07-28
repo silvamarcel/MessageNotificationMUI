@@ -16,6 +16,8 @@ blocks:
             - cache restore message-notification-mui-build
             - npm publish
             - echo 'MessageNotificationMUI was published!'
+      secrets:
+        - name: MessageNotificationMUI
     dependencies:
       - Build
   - name: Build
@@ -26,6 +28,8 @@ blocks:
           commands:
             - checkout --use-cache
             - cache restore
-            - npm run publish:build
+            - 'npm run publish:build'
             - cache delete message-notification-mui-build
             - cache store message-notification-mui-build dist
+      secrets:
+        - name: MessageNotificationMUI
