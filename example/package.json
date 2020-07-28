@@ -12,8 +12,11 @@
   "dependencies": {
     "react": "file:../node_modules/react",
     "react-dom": "file:../node_modules/react-dom",
+    "prop-types": "file:../node_modules/prop-types",
+    "@material-ui/core": "file:../node_modules/@material-ui/core",
+    "@material-ui/lab": "file:../node_modules/@material-ui/lab",
     "react-scripts": "file:../node_modules/react-scripts",
-    "message-notification-mui": "file:.."
+    "@dhouse.in/message-notification-mui": "file:.."
   },
   "devDependencies": {
     "@babel/plugin-syntax-object-rest-spread": "^7.8.3"

@@ -1,6 +1,5 @@
 import React from 'react';
-import { useMessageNotification } from 'message-notification-mui'
-
+import { useMessageNotification } from '@dhouse.in/message-notification-mui'
 
 const Buttons = () => {
   const { addMessage } = useMessageNotification();

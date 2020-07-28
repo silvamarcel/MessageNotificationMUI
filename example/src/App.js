@@ -1,5 +1,5 @@
 import React from 'react'
-import { MessageNotification, MessageProvider } from 'message-notification-mui'
+import { MessageNotification, MessageProvider } from '@dhouse.in/message-notification-mui'
 import Buttons from './Buttons';
 
 const App = () => {
