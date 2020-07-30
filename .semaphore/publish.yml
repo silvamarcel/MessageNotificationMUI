@@ -6,17 +6,17 @@ agent:
     os_image: ubuntu1804
 blocks:
   - name: Deploy Example
-      task:
-        jobs:
-            - name: Deploy example to gh-pages
-              commands:
-                - checkout
-                - cache restore
-                - nvm use
-                - npm run deploy
-                - echo 'MessageNotificationMUI Example was deployed!'
-        secrets:
-          - name: MessageNotificationMUI
+    task:
+      jobs:
+        - name: Deploy example to gh-pages
+          commands:
+            - checkout
+            - cache restore
+            - nvm use
+            - npm run deploy
+            - echo 'MessageNotificationMUI Example was deployed!'
+      secrets:
+        - name: MessageNotificationMUI
       dependencies:
         - Publish
   - name: Publish
