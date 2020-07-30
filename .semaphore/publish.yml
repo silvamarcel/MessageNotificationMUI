@@ -17,8 +17,8 @@ blocks:
             - echo 'MessageNotificationMUI Example was deployed!'
       secrets:
         - name: MessageNotificationMUI
-      dependencies:
-        - Publish
+    dependencies:
+      - Publish
   - name: Publish
     task:
       jobs:
