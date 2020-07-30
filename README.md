@@ -49,7 +49,8 @@ const MyApplication = () => {
   const showInfoMessage = () => {
     const title = 'Info Message';
     const text = 'My info message';
-    addMessage(title, text, 'info');
+    const durationInMilliseconds = 3000;
+    addMessage(title, text, 'info', durationInMilliseconds);
   };
 
   return (
