@@ -7,7 +7,8 @@ const Buttons = () => {
   const showMessage = (type) => {
     const title = `${type.toUpperCase()} Message`;
     const text = `My ${type} message`;
-    addMessage(title, text, type);
+    const duration = 3000;
+    addMessage(title, text, type, duration);
   }
 
   const showInfoMessage = () => {

@@ -13,14 +13,14 @@ const MessageProvider = ({ children }) => {
     setMessage(null);
   };
 
-  const addMessage = (title, text, type) => {
-    setMessage({ title, text, type });
+  const addMessage = (title, text, type, duration) => {
+    setMessage({ title, text, type, duration });
   };
 
   const contextValue = {
     message,
     addMessage: useCallback(
-      (title, text, type) => addMessage(title, text, type),
+      (title, text, type, duration) => addMessage(title, text, type, duration),
       []
     ),
     removeMessage: useCallback(() => removeMessage(), [])

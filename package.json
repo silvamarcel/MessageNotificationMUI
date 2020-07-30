@@ -1,6 +1,6 @@
 {
   "name": "@dhouse.in/message-notification-mui",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Message notification component using Material-UI",
   "author": "Marcel Silva",
   "license": "MIT",
@@ -81,5 +81,8 @@
   "bugs": {
     "url": "https://github.com/silvamarcel/MessageNotificationMUI/issues"
   },
-  "homepage": "https://github.com/silvamarcel/MessageNotificationMUI#readme"
+  "homepage": "https://github.com/silvamarcel/MessageNotificationMUI#readme",
+  "browserslist": [
+    "defaults"
+  ]
 }

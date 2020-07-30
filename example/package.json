@@ -12,7 +12,6 @@
   "dependencies": {
     "react": "file:../node_modules/react",
     "react-dom": "file:../node_modules/react-dom",
-    "prop-types": "file:../node_modules/prop-types",
     "@material-ui/core": "file:../node_modules/@material-ui/core",
     "@material-ui/lab": "file:../node_modules/@material-ui/lab",
     "react-scripts": "file:../node_modules/react-scripts",

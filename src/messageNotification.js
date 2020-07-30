@@ -5,10 +5,11 @@ import useMessageNotification from './useMessageNotification';
 
 const MessageNotification = () => {
   const { message, removeMessage } = useMessageNotification();
-  const { title, text, type } = message || {
+  const { title, text, type, duration } = message || {
     title: '',
     text: '',
-    type: 'info'
+    type: 'info',
+    duration: 6000
   };
 
   const handleClose = () => {
@@ -36,7 +37,7 @@ const MessageNotification = () => {
   return (
     <Snackbar
       open={!!message}
-      autoHideDuration={6000}
+      autoHideDuration={duration}
       onClose={handleClose}
       anchorOrigin={snackbarPosition}
     >
