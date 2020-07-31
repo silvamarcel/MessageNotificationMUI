@@ -5,12 +5,9 @@ agent:
     type: e1-standard-2
     os_image: ubuntu1804
 blocks:
-  - name: Build
+  - name: Check Branch
     task:
-      prologue:
-        commands:
-          - checkout
       jobs:
-        - name: Execute build
+        - name: Check Branch
           commands:
-            - npm run build
+            - checkout
