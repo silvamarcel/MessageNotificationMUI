@@ -18,6 +18,12 @@ blocks:
             - echo 'MessageNotificationMUI Example was deployed!'
       secrets:
         - name: MessageNotificationMUI
+      prologue:
+        commands:
+          - chmod 0600 ~/.ssh/id_rsa_semaphoreci_github
+          - ssh-add ~/.ssh/id_rsa_semaphoreci_github
+          - git config --global user.email "silva.marcel@gmail.com"
+          - git config --global user.name "Marcel Silva"
     dependencies:
       - Publish
   - name: Publish

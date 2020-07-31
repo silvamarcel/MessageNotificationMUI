@@ -1,6 +1,6 @@
 {
   "name": "@dhouse.in/message-notification-mui",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Message notification component using Material-UI",
   "author": "Marcel Silva",
   "license": "MIT",
@@ -83,6 +83,9 @@
   },
   "homepage": "https://github.com/silvamarcel/MessageNotificationMUI#readme",
   "browserslist": [
-    "defaults"
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
   ]
 }
