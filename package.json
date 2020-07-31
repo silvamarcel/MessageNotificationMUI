@@ -1,6 +1,6 @@
 {
   "name": "@dhouse.in/message-notification-mui",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Message notification component using Material-UI",
   "author": "Marcel Silva",
   "license": "MIT",
@@ -21,7 +21,7 @@
     "test:watch": "jest --watch --runInBand",
     "coverage": "jest --coverage --runInBand",
     "predeploy": "cd example && npm install && npm run build",
-    "deploy": "gh-pages -d example/build"
+    "deploy": "gh-pages -t .semaphore -d example/build"
   },
   "peerDependencies": {
     "react": "^16.13.1",
